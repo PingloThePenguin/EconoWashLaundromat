@@ -1508,3 +1508,109 @@ footer p{
 
 
 }
+/* ==========================================================
+   JAVASCRIPT EFFECT STYLES
+========================================================== */
+
+
+.question p{
+
+    max-height:0;
+
+    overflow:hidden;
+
+    transition:.4s ease;
+
+}
+
+
+.question.active{
+
+    transform:translateX(8px);
+
+}
+
+
+
+.image-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.85);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:99999;
+
+    padding:40px;
+
+}
+
+
+
+.image-overlay img{
+
+    max-width:90%;
+
+    max-height:90%;
+
+    border-radius:20px;
+
+}
+
+
+
+.mobile-menu-btn{
+
+    display:none;
+
+    border:none;
+
+    background:none;
+
+    font-size:28px;
+
+}
+
+
+
+@media(max-width:768px){
+
+.mobile-menu-btn{
+
+    display:block;
+
+}
+
+
+nav ul.open{
+
+    display:flex;
+
+    position:absolute;
+
+    top:80px;
+
+    left:5%;
+
+    right:5%;
+
+    flex-direction:column;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+}
+
+}
